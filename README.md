@@ -1,5 +1,5 @@
 # Zabbix-Notification-Telegram
-Repository for the code Notification Zabbix Telegram with Graph
+Repository for the code Notification Zabbix 6 Telegram with Graph
 
 ## 1º Copiar notification_telegram-graph.sh para /usr/lib/zabbix/alertscripts
 
