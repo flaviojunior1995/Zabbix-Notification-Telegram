@@ -1,9 +1,9 @@
 # Zabbix-Notification-Telegram
 Repository for the code Notification Zabbix 6 Telegram with Graph
 
-## 1º Copiar notification_telegram-graph.sh para /usr/lib/zabbix/alertscripts
+## 1º Copy notification_telegram-graph.sh to /usr/lib/zabbix/alertscripts
 
-## 2º Alterar variaveis do programa para infomações proprias
+## 2º Change variables
 ```
 ZABBIX_URL=
 ZABBIX_USER=
@@ -11,7 +11,7 @@ ZABBIX_PASSWORD=
 TELEGRAM_TOKEN=
 ```
 
-## 3º Criar novo Media Types no Zabbix (OBS: Em Subject o terceiro campo é o eixo X do gráfico, quarto campo é o eixo Y do gráfico e o quinto campo é o tempo do gráfico em horas. )
+## 3º Create new Media Type on Zabbix (OBS: In Subject the third variable is the X of the graffic, fourth variable is the Y of the graffic and the fifth is the time of the graffic in hours.)
 ```
 #Media type
 Name= Telegram Graph
@@ -54,14 +54,14 @@ Current problem status is {EVENT.STATUS}, acknowledged: {EVENT.ACK.STATUS}
 Original problem ID: {EVENT.ID}
 ```
 
-## 4º Criar User Group Report Telegram no Zabbix
+## 4º Create User Group Report Telegram on Zabbix
 ```
 #User Group
 Group name= Report Telegram
 Users= ...
 ```
 
-## 5º Criar Actions no Zabbix
+## 5º Criate Actions on Zabbix
 ```
 #Action
 Name= Report problem Telegram Graph
@@ -89,4 +89,4 @@ Update operations
 -Send only to= Telegram Graph
 ```
 
-## 6º Configurar tag nas triggers desejadas
+## 6º Configure tag on triggerss
